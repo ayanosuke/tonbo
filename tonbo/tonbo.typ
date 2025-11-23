@@ -1,13 +1,23 @@
 //--------------------------------------------------
 // tonbo.typ
-// Copyright(C)'2024 Ayanosuke(Maison de DCC)
+// Copyright(C)'2025 Ayanosuke(Maison de DCC)
 // 
 // This software is released under the MIT License.
 // http://opensource.org/licenses/mit-license.php
 //
 // markly をベースに日本の印刷所用のトンボに対応
 // https://typst.app/universe/package/markly/
+// 
+// Typst同人誌の骨子にあたる template.typ
+// kanata様のtemplate.typを参考にさせてもらいました。
+// https://techbookfest.org/organization/5642855536132096
+// 
+// 隠しノンブルの設定
+// marimo様のTypstで技術同人誌を書こう！すぐに役立つ20のトピックを
+// 参考にさせてもらいました。
+// https://techbookfest.org/organization/2Lb8ait6GBQhyvKHB6d3rD
 //--------------------------------------------------
+
 #import "@preview/cetz:0.4.2"
 
 #let marks(markly-context) = {
@@ -449,6 +459,7 @@
     //トンボの設定
     background: if markly-context.at("tonbo") {marks(markly-context) },
     //隠しノンブルの設定
+    //marimo様のTypstで技術同人誌を書こう！すぐに役立つ20のトピックを参考にさせてもらいました。
     header: if markly-context.at("tonbo") { 
       context {
         if calc.odd(here().page()){ // 奇数ページ
@@ -464,6 +475,7 @@
         }
       }
     },
+    //書籍スタイルの設定、ここに記載しなくても良い方法があれば・・・
     columns: 1,           // 段組み
     numbering: "1",       // ページ番号（ノンブル）
     number-align: center, // ページ番号（ノンブル）の位置     

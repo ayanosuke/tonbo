@@ -4,6 +4,7 @@
 // 
 //　2025/11/13　あやの　tonbo.typ用に set page() のコメントアウトを追加
 // set text() に Mac用のフォントを追加
+//　https://qiita.com/masashi_214/private/bd4fa1474dc6e15ee0bd
 
 //--------------------
 //  バージョンチェック
@@ -70,19 +71,30 @@
   //--------------------
   set text(
     // 記載の順にフォントを検索します
-    font: ("Meiryo UI", "Yu Gothic", "Arial"), // フォント設定
+    //font: ("Meiryo UI", "Yu Gothic", "Arial"), //win ゴシック体（サンセリフ体）フォント設定
+    //font: ("Harano Aji Mincho", "Yu Gothic", "Arial"), // win 明朝体（セリフ体）フォント設定
+    //font: ("Arial","Hiragino Kaku Gothic ProN", "BIZ UDGothic", "Arial"), // mac フォント設定
+
+    font: ("Times New Roman","Hiragino Mincho ProN", "BIZ UDMincho"), // mac 明朝体系の書籍用フォント設定
+    //font: ("Times New Roman","BIZ UDMincho", "BIZ UDMincho"), // win/mac 明朝体系の書籍用フォント設定
+
+    //font: ("Arial","Hiragino Kaku Gothic ProN"), // mac ゴシック系の書籍用フォント設定
+    //font: ("Arial","BIZ UDGothic"), // win/mac ゴシック系の書籍用フォント設定
+
     /* フォント候補
-      "Arial","New Computer Modern","Tahoma",
-      "Times New Roman","Verdana",
-      "Meiryo","Meiryo UI",
-      "Yu Gothic","Yu Gothic UI","Yu Mincho",
+      "Arial","New Computer Modern","Tahoma", //win
+      "Times New Roman","Verdana", //win
+      "Meiryo","Meiryo UI", //win
+      "Yu Gothic","Yu Gothic UI","Yu Mincho", //win
     */
     size: 9pt, // フォントサイズ
     lang: "jp", // 言語
   )
   // コードブロック内のフォント指定
   show raw: set text(
-    font: ("Lucida Console", "Meiryo UI", "Yu Gothic"), // フォント設定
+    //font: ("Lucida Console", "Meiryo UI", "Yu Gothic"), // win フォント設定
+    font: ("BIZ UDMincho"), // win/mac フォント設定
+    //font: ("JetBrains Mono","Hiragino Kaku Gothic ProN", "BIZ UDMincho"), // フォント設定
     /* コードブロック内のフォント候補（等幅フォント推奨）
     "BIZ UDGothic","Consolas","Lucida Console",
     "MS Gothic",
@@ -162,19 +174,22 @@
   \ \ \
   #align(center)[
     #text(
-      font: "Meiryo UI", // フォント
+//    font: "Meiryo UI", // win フォント
+      font: "Hiragino Kaku Gothic ProN", // mac フォント
       size: 18pt, // フォントサイズ
       lang: "jp", // 言語
     )[*ほげほげほげほげほげほげ（書籍タイトル）*]
     \ \
     #text(
-      font: "Meiryo UI", // フォント
+//    font: "Meiryo UI", // win フォント
+      font: "Hiragino Kaku Gothic ProN", // mac フォント
       size: 13pt, // フォントサイズ
       lang: "jp", // 言語
     )[*ふがふがふがふが（書籍サブタイトル）*]
     \ \
     #text(
-      font: "Meiryo UI", // フォント
+//    font: "Meiryo UI", // win フォント
+      font: "Hiragino Kaku Gothic ProN", // mac フォント
       size: 13pt, // フォントサイズ
       lang: "jp", // 言語
     )[Your name]
@@ -490,7 +505,8 @@
   #place(top + left,dx: -20pt,dy: -30pt,rect(fill: white, width:130%))
   \ \ \ \ \ \ \ \ \ \ \ \ // 改行で奥付の位置調整
   #text(
-    font: "Meiryo UI", // フォント
+//  font: "Meiryo UI", // win フォント
+    font: "Hiragino Kaku Gothic ProN", // mac フォント
     size: 12pt, // フォントサイズ
     lang: "jp", // 言語
   )[ほげほげほげほげほげほげ（書籍タイトル）]

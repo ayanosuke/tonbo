@@ -1,4 +1,5 @@
 TYpst用、日本印刷所向けのトンボを付けるためのプログラムです
+https://qiita.com/masashi_214/items/bd4fa1474dc6e15ee0bd
 
 kanata様のテンプレートを流用しています
 https://techbookfest.org/organization/5642855536132096

@@ -2,6 +2,9 @@
 // tonbo.typ
 // Copyright(C)'2025 Ayanosuke(Maison de DCC)
 // 
+// Typstを使って印刷所で使用できるトンボ付き入稿データ（裁断・塗り足しOK）を作る手順
+// https://qiita.com/masashi_214/items/bd4fa1474dc6e15ee0bd
+// 
 // This software is released under the MIT License.
 // http://opensource.org/licenses/mit-license.php
 //

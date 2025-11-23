@@ -3,6 +3,10 @@ TYpst用、日本印刷所向けのトンボを付けるためのプログラム
 kanata様のテンプレートを流用しています
 https://techbookfest.org/organization/5642855536132096
 
+marimo様のTypstで技術同人誌を書こう！すぐに役立つ20のトピックの
+隠しノンブルを参考にさせてもらいました。
+https://techbookfest.org/organization/2Lb8ait6GBQhyvKHB6d3rD
+
 markly をベースに日本の印刷所用のトンボに対応
 https://typst.app/universe/package/markly/
 

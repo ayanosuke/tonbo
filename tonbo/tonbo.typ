@@ -65,7 +65,7 @@
       // grid((0,0), (612,792), stroke:none, step: 72)
       grid((0,0), (stock-width.pt(),stock-height.pt()), stroke:none, step: 72)
 
-      // コーナートンボ作成　beed ライン
+      // コーナートンボ作成　cut ライン
       let draw-marks(top-left, top-right, bottom-left, bottom-right, color:black) = {
         // Top Left 上左
         let from = top-left
@@ -120,7 +120,7 @@
         line(from, to, stroke: Line-Width + color)  //横線
       }
 
-      // コーナートンボ作成 cut ライン
+      // コーナートンボ作成 bleed（塗りたし）ライン
       let draw-marks-bleed(top-left, top-right, bottom-left, bottom-right, color:black) = {
         // Top Left 上左
         let from = top-left
